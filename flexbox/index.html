@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Casita Sedona</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- META DESCRIPTION -->
+<meta name="description" content="Casita Sedona Bed and Breakfast offers luxury lodging, scenic red rock views, guided hikes, and relaxing amenities in Sedona, Arizona.">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #330000;
+  margin: 0;
+}
+
+#wrapper {
+  background-color: #F4E8BC;
+  width: 90%;
+  margin: auto;
+  color: #330000;
+}
+
+/* HEADER */
+header {
+  background-image: url(header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 300%;
+  padding: 5% 0;
+  text-shadow: 3px 3px 3px #F4E8BC;
+}
+
+h1, h2 {
+  color: #003300;
+}
+
+/* FLEX LAYOUT */
+#wrapper > div {
+  display: flex;
+}
+
+/* NAV */
+nav {
+  flex: 1;
+  padding: 1em;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.2em;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:link { color: #330000; }
+nav a:visited { color: #003300; }
+nav a:hover { color: #996600; }
+
+/* MAIN */
+main {
+  flex: 3;
+  padding: 1em;
+}
+
+/* ASIDE */
+aside {
+  flex: 1;
+  padding: 1em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 80%;
+  font-style: italic;
+  color: #003300;
+  padding: 2.5%;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+  #wrapper {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 768px) {
+
+  #wrapper > div {
+    flex-direction: column;
+  }
+
+  /* REORDER ELEMENTS */
+  main {
+    order: 1;
+  }
+
+  aside {
+    order: 2;
+  }
+
+  nav {
+    order: 3;
+    border-top: 2px solid #330000;
+    padding: 10px 0;
+  }
+
+  /* NAV AT BOTTOM STYLE */
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav li {
+    margin-bottom: 0;
+  }
+}
+
+header, main, aside, nav, footer {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+  <h1>Casita Sedona</h1>
+</header>
+
+<div>
+
+<!-- NAVIGATION (CLICKABLE DEAD LINKS) -->
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Rooms</a></li>
+    <li><a href="#">Specials</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Located in the Heart of Sedona</h2>
+  <p>At Casita Sedona Bed &amp; Breakfast you'll be close to art galleries, shops, restaurants, hiking trails, and tours. Ride the free trolley to shops and galleries.</p>
+
+  <h2>Luxurious Rooms</h2>
+  <p>Stay in a well-appointed room at Casita Sedona with your own fireplace, king-size bed, balcony overlooking the red rocks, private bath with shower, and whirlpool tub for two.</p>
+
+  <h2>Hearty Breakfast</h2>
+  <p>Each day begins with a hearty breakfast that includes your choice of Belgian waffles, pumpkin french toast, or quiche.</p>
+
+  <h2>About Your Hosts</h2>
+  <p>Your hosts, Melanie and Greg Tortuga, are long-time Sedona residents who love to share their knowledge of the Sedona area.</p>
+</main>
+
+<aside>
+  <img src="pools.jpg" alt="Pools of water in the rock">
+  <h2>Guided Hikes</h2>
+  <p>Casita Sedona offers a free guided hike each week for guests. Explore the Seven Sacred Pools along the Soldiers Pass Trail.</p>
+</aside>
+
+</div>
+
+<footer>
+  <p>© 2026 Richard Emmans</p>
+</footer>
+
+</div>
+
+</body>
+</html>
